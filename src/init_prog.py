@@ -1,6 +1,8 @@
 from simplify.stem import *
 from simplify.lemmatizing import *
 from simplify.punctuation import *
+from src.simplify.stopwords import *
+
 sentence = "hello, how are you doing after vaccine dose?"
 
 stemmed_sentence = porter_stemmer(sentence)
@@ -22,4 +24,8 @@ print("Spacy lemmatizer: ", lemm_sentence)
 
 sentence_after = remove_punctuation(sentence, '?')
 # sentence_after = remove_punctuation(sentence)
-print(sentence_after)
+print("Punctuation removal: ", sentence_after)
+
+# removed_stop_words = remove_stopwords(sentence, skip_words='you')
+removed_stop_words = remove_stopwords(sentence, skip_words=None)
+print("Stop words removal: ", removed_stop_words)

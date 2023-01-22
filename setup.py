@@ -10,7 +10,7 @@ setup(
     packages=find_packages('src'),
     package_dir={'': 'src'},
     # url='https://github.com/gmyrianthous/example-publish-pypi',
-    keywords='example project',
+    keywords='Pre-processing, NLP,',
     install_requires=[
           'nltk',
       ],

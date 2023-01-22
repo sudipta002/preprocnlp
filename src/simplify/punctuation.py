@@ -1,7 +1,15 @@
 import re
 import string
 
+
 def remove_punctuation(sentence, skip_punc=None):
+    """
+    This function removes all punctuations from the text. But if you want to retain special punctuation,
+    please pass them through skip_punc argument.
+    :param sentence: text
+    :param skip_punc: comma separated list of punctuations.
+    :return: text
+    """
     punc = string.punctuation
     list_punc = list(punc)
     if skip_punc is not None:

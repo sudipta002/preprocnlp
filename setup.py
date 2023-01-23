@@ -9,10 +9,10 @@ setup(
     author_email='sudipta002@gmail.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    # url='https://github.com/gmyrianthous/example-publish-pypi',
+    url='https://github.com/sudipta002/preprocnlp',
     keywords='Pre-processing, NLP,',
     install_requires=[
-          'nltk',
+          'nltk','spacy'
       ],
 
 )

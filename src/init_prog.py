@@ -4,7 +4,7 @@ from simplify.punctuation import *
 from src.simplify.stopwords import *
 
 sample_sentence = "hello, how are you doing after vaccine dose?"
-
+# sample_sentence = None
 stemmed_sentence = porter_stemmer(sample_sentence)
 print("Porter stemmer: ", stemmed_sentence)
 #

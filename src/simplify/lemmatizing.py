@@ -30,6 +30,7 @@ def wordnet_lemmatizer(sentence):
     :param sentence: text
     :return: text
     """
+    assert type(sentence) is not None
     lemmatizer = WordNetLemmatizer()
     token_words = text_to_word_token(sentence)
     lemm_sentence = word_lem(token_words, lemmatizer)

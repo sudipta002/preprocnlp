@@ -21,6 +21,7 @@ def porter_stemmer(sentence):
     :param sentence: text
     :return: text
     """
+    assert type(sentence) is not None
     stemmer = PorterStemmer()
     token_words = text_to_word_token(sentence)
     stemmed_sentence = word_stemmer(token_words, stemmer)
@@ -33,6 +34,7 @@ def lancaster_stemmer(sentence):
     :param sentence: text
     :return: text
     """
+    assert type(sentence) is not None
     stemmer = LancasterStemmer()
     token_words = text_to_word_token(sentence)
     stemmed_sentence = word_stemmer(token_words, stemmer)
